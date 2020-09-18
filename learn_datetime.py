@@ -1,13 +1,12 @@
 '''
-
 Задание
 
     Напечатайте в консоль даты: вчера, сегодня, 30 дней назад
-    Превратите строку "01/01/25 12:10:03.234567" в объект datetime
-
+    Превратите строку "01/01/25 12:10:03.234567" в объект datet
 '''
 
 from datetime import datetime, timedelta
+
 
 def main()
     delta_yesterday = timedelta(days=1)
@@ -26,6 +25,7 @@ def main()
     dt_string = '01/01/25 12:10:03.234567'
     dt_date = datetime.strptime(dt_string, ('%d/%m/%y %H:%M:%S.%f'))
     print(dt_date)
-    
+ 
+
 if __name__ == "__main__":
     main()
